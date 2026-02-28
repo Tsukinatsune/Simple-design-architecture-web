@@ -3,70 +3,67 @@
 ### Panning
 ![SPACE - Pan](https://img.shields.io/badge/SPACE-Pan-007ACC?style=for-the-badge)
 
-Hold the **Space** key and drag your mouse to move around the infinite canvas. Explore huge architectures without screen-size limits.
+Hold **Space** and drag your mouse anywhere on the canvas. Perfect for exploring massive diagrams.
 
 ### Zooming
 ![Ctrl + + - Zoom In](https://img.shields.io/badge/Ctrl%20%2B%20%2B-Zoom%20In-28A745?style=for-the-badge) ![Ctrl + - - Zoom Out](https://img.shields.io/badge/Ctrl%20%2B%20%E2%88%92-Zoom%20Out-DC3545?style=for-the-badge)
 
-- **Mouse**: Scroll wheel to zoom in/out.
-- **Keyboard**: `Ctrl` + `+` (Zoom In) / `Ctrl` + `-` (Zoom Out).
+- **Mouse wheel** — zoom in/out with mouse position as center
+- **Keyboard** — `Ctrl + +` / `Ctrl + =` (in) or `Ctrl + -` (out)
 
-**The Grid** scales automatically with your zoom level — perfect alignment every time.
+The background grid scales dynamically for perfect alignment at any zoom level.
 
 
 
 ## 2. Managing Components
 
-### Adding Nodes
-![N - Add Node](https://img.shields.io/badge/N-Add%20Node-17A2B8?style=for-the-badge)
+### Adding Nodes & Groups
+Use the **toolbar** (top center):
+- **Add Node** → creates a new service node at your current view center
+- **Group** → creates a resizable dashed boundary (great for VPCs, Availability Zones, Kubernetes clusters, etc.)
 
-Click the **Add Node** button (or press `N`). New nodes spawn at the center of your view — drag them anywhere.
+**Resizing Groups**: Drag the dotted handle at the bottom-right corner.
 
-### Adding & Resizing Groups
-![G - Add Group](https://img.shields.io/badge/G-Add%20Group-FFC107?style=for-the-badge)
-
-Click **Group** (or press `G`) to create boundary boxes (ideal for VPCs, Subnets, Regions, etc.).
-
-**Resize**: In Edit Mode, drag the dotted handle at the bottom-right corner of any group.
-
-### Renaming
-Right-click any node or group → **Rename** for crystal-clear labels.
+**Renaming**: Right-click any node or group → **Rename**.
 
 
 
 ## 3. Advanced Node Features
 
 ### Custom Icons
-Right-click a node → **Upload Icon** to replace the default square with your own PNG/SVG (AWS, Azure, Kubernetes, databases, etc.).
+Right-click any node → **Upload Icon** → choose PNG/SVG (AWS, Azure, GCP, Kubernetes, databases, etc.).
 
-### Connections & Data Flows
-![SHIFT + L - Connect](https://img.shields.io/badge/SHIFT%20%2B%20L-Connect-FF5722?style=for-the-badge)
+### Connections (the coolest part)
+![SHIFT + Q - Connect](https://img.shields.io/badge/SHIFT%20%2B%20Q-Connect-FF5722?style=for-the-badge)
 
-To link two nodes:
-1. Press **`Shift + L`**
-2. Click & hold on the **Source** node
-3. Drag the ghost line to the **Target** node and release
+**How to draw a connection:**
+1. Hold **`Shift + Q`**
+2. Click and hold on the **source** node (it turns green)
+3. Drag the glowing dashed "ghost line" to the **target** node
+4. Release → connection appears!
 
-**Two-Way Links**: Right-click any existing connection → toggle one-way ↔ bidirectional.
+**Two-Way Links**: Right-click any existing line → **Toggle Two-Way** (bidirectional data flow).
 
 
 
 ## 4. Simulation Mode
-![S - Simulate](https://img.shields.io/badge/S-Simulate-6F42C1?style=for-the-badge)
 
-Toggle **Simulate** in the top toolbar (or press `S`) and watch your architecture come alive!
+Click **SIMULATE** in the top toolbar.
 
-- Interface locks automatically (no accidental edits)
-- Real-time **blue data packets** flow along every connection
+- Editing is locked (safe mode)
+- Real-time **blue data packets** automatically flow along every connection
+- Watch your entire architecture come alive!
+
+Switch back to **EDIT** anytime.
 
 
 
 ## 5. Persistence
 
-### Export
-![Ctrl + E - Export](https://img.shields.io/badge/Ctrl%20%2B%20E-Export-343A40?style=for-the-badge)
+**Export** — Click **Export** → downloads `architecture_*.json.gz` (includes everything: positions, icons, groups, connections).
 
-Save everything (nodes, groups, custom icons, connections) as a compressed `.json.gz` file.
+**Import** — Click **Import** or just drag & drop your `.json.gz` file onto the canvas.
 
-### Import
-Drag & drop your saved `.json.gz` file onto the canvas — or click **Import** — to restore your workspace exactly as you left it.
+**Clear** — Red button (with confirmation) to start fresh.
+
+Document are written by AI 70%
